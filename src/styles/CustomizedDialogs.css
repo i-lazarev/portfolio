@@ -5,6 +5,7 @@
 
 .img-thumbnail {
   width: 200px;
+  
 }
 /* #project-img{
     cursor: pointer;
@@ -36,7 +37,9 @@
 }
 .container {
   position: relative;
+  
 }
 .container:hover .overlay {
   opacity: 0.8;
 }
+

@@ -5,6 +5,7 @@ const Projects = () => {
     <div
       id="projects"
       style={{
+        scrollBehavior:"smooth",
         height: "101vh",
         backgroundColor: "black",
         display: "flex",
