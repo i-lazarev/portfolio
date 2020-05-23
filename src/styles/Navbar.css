@@ -1,0 +1,57 @@
+#navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 50%;
+  padding-bottom: 0;
+  z-index: 2;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
+.nav-link {
+  color: #e0e0e0;
+  font-size: 0.8rem;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+}
+.fas:hover {
+  color: white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+.logo{
+  font-family: 'Crete Round', serif;
+  color: #e0e0e0;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  padding: 0 8px;
+  border: 1px solid white;
+  margin: 0;
+}
+.logo:hover{
+  color: black;
+  background: white;
+  
+  
+  
+}
+
+
+@media only screen and (max-width: 415px) {
+  .data-smooth p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #navbar {
+    padding-right: 0;
+  }
+}
