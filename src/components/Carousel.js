@@ -14,6 +14,7 @@ import Img3 from "../images/jack-b-JUvlf3OT6kc-unsplash.jpg";
 import Img4 from "../images/joel-tasche-OWLvyW0YosY-unsplash.jpg";
 import Img5 from "../images/jonas-off-pvYly2NeiCs-unsplash.jpg";
 import Img6 from "../images/josep-pines-0QpAbH2i-Cs-unsplash.jpg";
+import "../styles/Carousel.css"
 
 const quotes = [
   {
@@ -66,7 +67,7 @@ const Carousel = () => {
       }}
     >
       <MDBCarousel
-        activeItem={1}
+        activeItem={6}
         length={6}
         showControls={true}
         showIndicators={true}
@@ -79,7 +80,7 @@ const Carousel = () => {
               <MDBView>
                 <img
                   style={{ height: "75vh", objectFit: "contain" }}
-                  className="d-block w-100"
+                  className="d-block w-100 kenburns-top"
                   src={quote.img}
                   alt=""
                 />

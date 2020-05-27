@@ -1,52 +1,80 @@
-#footer{
-    overflow: hidden;
-    bottom: 0;
-    width: 100%;
-    height: 30vh;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#footer {
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  height: 30vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-hr{
-    width: 90%;
-    background: #ffffff;
+#contact-details {
+  font-size: 1.2rem;
 }
 
-#contact-list-1 {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
+hr {
+  width: 90%;
+  background: #ffffff;
+}
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
-  #contact-list-2 {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    width: 50%;  
-  }
+.contact-list {
+  list-style: none;
  
-  .company-info{
-      display:flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      width: 100%;
-  }
-  .list-items{
-      display: flex;
-      padding-left: 40%;
-  }
-  .fa{
-      padding-right: 6px;
-      font-size: 1.2rem;
-  }
-  .fab{
-    padding-right: 6px;
-    font-size: 1.5rem;
-    padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: flex-start;
+  margin: 0 auto;
 }
-  
+
+
+.list-items {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+.fa {
+  padding-right: 6px;
+  font-size: 1.2rem;
+}
+.fab {
+  padding-right: 6px;
+  font-size: 1.5rem;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .list-items {
+        
+        margin: 3px 10%;
+      }
+      .contact-list{
+        align-items: flex-start;
+      }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 415px) {
+    #footer{
+        height: 36vh;
+    }
+    .company-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    
+      }
+      .contact-list{
+          align-items: flex-start;
+         justify-content: center;
+         width: 90%;
+      }
+}

@@ -1,13 +1,12 @@
 import React from "react";
-
 import { MDBNav, MDBNavItem } from "mdbreact";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
   return (
     <MDBNav tabs id="navbar">
-      <MDBNavItem>
-        <h1 className="logo">L</h1>
+      <MDBNavItem >
+        <h1 className="logo lip-horizontal-bottom">L</h1>
       </MDBNavItem>
       <MDBNavItem>
         <a className="data-smooth" href="#home">

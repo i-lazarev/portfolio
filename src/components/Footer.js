@@ -5,10 +5,9 @@ const Footer = () => {
   return (
     <div>
       <footer id="footer" className="page-footer font-small ">
-      <h4>Contact Details</h4>
+        <p id="contact-details">Contact Details</p>
         <div className="company-info">
-          
-          <ul id="contact-list-1">
+          <ul className="contact-list">
             <li className="list-items">
               <i className="fa fa-road"></i> Suhler Str.17 12629
             </li>
@@ -19,12 +18,10 @@ const Footer = () => {
 
             <li className="list-items">
               <i className="fa fa-envelope"></i>
-              <a rel="noopener noreferrer" target="_blank" href="#">
-                anion.lazarev@gmail.com
-              </a>
+              <p>anion.lazarev@gmail.com</p>
             </li>
           </ul>
-          <ul id="contact-list-2">
+          <ul className="contact-list">
             <li className="list-items">
               <i className="fab fa-github-square"></i>
               <a
