@@ -6,7 +6,7 @@ import Img4 from "../images/light-painting-at-night-327509.jpg";
 import Img5 from "../images/lights-night-weather-storm-66867.jpg";
 import Img6 from "../images/person-holding-magnifying-glass-712786.jpg";
 import "../styles/Carousel.css";
-import { Animated } from "react-animated-css";
+
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
