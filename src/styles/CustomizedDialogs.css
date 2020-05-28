@@ -1,19 +1,12 @@
 .dialog-background-color {
   background: rgb(24, 23, 23);
   color: #ffffff;
-  
 }
 
 .img-thumbnail {
   width: 200px;
-  
 }
-/* #project-img{
-    cursor: pointer;
-}
-#project-img:hover{
-    opacity: 0.5;
-} */
+
 .text {
   color: white;
   font-size: 20px;

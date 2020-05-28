@@ -15,6 +15,7 @@ const Projects = () => {
       }}
     >
       <Animated 
+      style={{cursor:"pointer"}}
       animationIn="zoomIn" 
       animationOut="zoomOut" 
       isVisible={true}
