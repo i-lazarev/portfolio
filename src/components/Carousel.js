@@ -3,7 +3,7 @@ import Img1 from "../images/architecture-blur-bridge-buildings-314380.jpg";
 import Img2 from "../images/astronomy-beautiful-clouds-constellation-355465.jpg";
 import Img3 from "../images/birds-5159711_1920.jpg";
 import Img4 from "../images/light-painting-at-night-327509.jpg";
-import Img5 from "../images/lights-night-weather-storm-66867.jpg";
+import Img5 from "../images/person-sky-silhouette-night-32237.jpg";
 import Img6 from "../images/person-holding-magnifying-glass-712786.jpg";
 import "../styles/Carousel.css";
 
