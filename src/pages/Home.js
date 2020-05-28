@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/NavBar";
-import Carousel from "../components/Carousel";
+import CarouselComponent from "../components/Carousel";
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       }}
     >
       <Navbar/>
-      <Carousel />
+      <CarouselComponent />
     </div>
   );
 };

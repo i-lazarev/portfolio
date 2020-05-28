@@ -1,0 +1,31 @@
+
+/* #image-quote{
+    height: 100vh;
+    object-fit: contain;
+    width:90vw;
+} */
+.carousel img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.carousel .slide img {
+  max-height: 100vh;
+  object-fit:cover;
+  width:100vw;
+}
+.legend {
+  margin-bottom: 80px;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .legend {
+    margin-bottom: 10px;
+  
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');

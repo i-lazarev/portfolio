@@ -5,7 +5,9 @@ import ProjectImage from "../images/Screenshot 2020-05-22 at 12.09.15.png";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import "../styles/CustomizedDialogs.css";
+import { useTheme } from '@material-ui/core/styles';
 
 const CustomizedDialogs = () => {
   const [open, setOpen] = React.useState(false);
@@ -16,6 +18,9 @@ const CustomizedDialogs = () => {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <div>
@@ -29,6 +34,8 @@ const CustomizedDialogs = () => {
         <p style={{ color: "#ffffff" }}>yummyDB</p>
       </div>
       <Dialog
+      id="dialog"
+        fullScreen={fullScreen}
         open={open}
         onClose={handleClose}
         aria-labelledby="form-dialog-title"
@@ -36,6 +43,7 @@ const CustomizedDialogs = () => {
         <DialogTitle
           className="dialog-background-color "
           id="form-dialog-title"
+          style={{textAlign:"center"}}
         >
           About yummyDB
         </DialogTitle>
@@ -66,6 +74,7 @@ const CustomizedDialogs = () => {
             </ul>
           </div>
           <iframe
+          id="iframe"
             title="yummyDB"
             width="560"
             height="315"

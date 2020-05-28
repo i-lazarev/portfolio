@@ -1,6 +1,7 @@
 .dialog-background-color {
   background: rgb(24, 23, 23);
   color: #ffffff;
+  
 }
 
 .img-thumbnail {
@@ -43,3 +44,13 @@
   opacity: 0.8;
 }
 
+@media screen and (max-width: 450px) {
+  .dialog-background-color {
+    width: 100vw;
+    
+  }
+  #iframe{
+    width: 90vw;
+  }
+
+}

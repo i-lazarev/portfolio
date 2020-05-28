@@ -1,20 +1,15 @@
 import React from "react";
-import {
-  MDBCarousel,
-  MDBCarouselCaption,
-  MDBCarouselInner,
-  MDBCarouselItem,
-  MDBView,
-  MDBMask,
-  MDBContainer,
-} from "mdbreact";
-import Img1 from "../images/zdenek-machacek-hgkjhbL5C1g-unsplash.jpg";
-import Img2 from "../images/chmyphotography-qI5XixBb6TU-unsplash.jpg";
-import Img3 from "../images/jack-b-JUvlf3OT6kc-unsplash.jpg";
-import Img4 from "../images/joel-tasche-OWLvyW0YosY-unsplash.jpg";
-import Img5 from "../images/jonas-off-pvYly2NeiCs-unsplash.jpg";
-import Img6 from "../images/josep-pines-0QpAbH2i-Cs-unsplash.jpg";
-import "../styles/Carousel.css"
+import Img1 from "../images/architecture-blur-bridge-buildings-314380.jpg";
+import Img2 from "../images/astronomy-beautiful-clouds-constellation-355465.jpg";
+import Img3 from "../images/birds-5159711_1920.jpg";
+import Img4 from "../images/light-painting-at-night-327509.jpg";
+import Img5 from "../images/lights-night-weather-storm-66867.jpg";
+import Img6 from "../images/person-holding-magnifying-glass-712786.jpg";
+import "../styles/Carousel.css";
+import { Animated } from "react-animated-css";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 const quotes = [
   {
@@ -58,44 +53,28 @@ const quotes = [
   },
 ];
 
-const Carousel = () => {
+const CarouselComponent = () => {
   return (
-    <MDBContainer
-      style={{
-        height: "70vh",
-        width: "100vw"
-      }}
+    <Carousel
+      showThumbs={false}
+      showArrows={false}
+      interval="3500"
+      stopOnHover={false}
+      showIndicators={false}
+      autoPlay
+      infiniteLoop={true}
     >
-      <MDBCarousel
-        activeItem={6}
-        length={6}
-        showControls={true}
-        showIndicators={true}
-        className="z-depth-1"
-      >
-        <MDBCarouselInner>
-          (
-          {quotes.map((quote) => (
-            <MDBCarouselItem key={quote.id} itemId={quote.id}>
-              <MDBView>
-                <img
-                  style={{ height: "75vh", objectFit: "contain" }}
-                  className="d-block w-100 kenburns-top"
-                  src={quote.img}
-                  alt=""
-                />
-                <MDBMask overlay="black-light" />
-              </MDBView>
-              <MDBCarouselCaption>
-                <h3 className="h3-responsive">{quote.quote}</h3>
-                <p>{quote.author}</p>
-              </MDBCarouselCaption>
-            </MDBCarouselItem>
-          ))}
-        </MDBCarouselInner>
-      </MDBCarousel>
-    </MDBContainer>
+      {quotes.map((quote) => (
+        <div key={quote.id}>
+          <img id="image-quote" src={quote.img} alt={quote.author} />
+          <div className="legend" style={{ background: "transparent" }}>
+            <p style={{ fontSize: "25px" }}>"{quote.quote}"</p>
+            <p style={{ fontSize: "20px", textAlign: "end" }}>{quote.author}</p>
+          </div>
+        </div>
+      ))}
+    </Carousel>
   );
 };
 
-export default Carousel;
+export default CarouselComponent;
