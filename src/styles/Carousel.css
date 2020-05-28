@@ -4,6 +4,7 @@
     object-fit: contain;
     width:90vw;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
 .carousel img {
   width: 100% !important;
   height: 100% !important;
@@ -27,5 +28,3 @@
   
   }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
