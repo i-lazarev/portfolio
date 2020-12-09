@@ -2,6 +2,8 @@ import React from "react";
 import DialogYummy from "../components/DialogYummy";
 import { Animated } from "react-animated-css";
 import DialogTodo from "../components/DialogTodo";
+import DialogTicTacToe from "../components/DialogTicTacToe";
+
 const Projects = () => {
   return (
     <div
@@ -33,6 +35,15 @@ const Projects = () => {
         animationInDelay="3000"
       >
         <DialogTodo />
+      </Animated>
+      <Animated
+        style={{ cursor: "pointer" }}
+        animationIn="zoomIn"
+        animationOut="zoomOut"
+        isVisible={true}
+        animationInDelay="3000"
+      >
+        <DialogTicTacToe />
       </Animated>
     </div>
   );
